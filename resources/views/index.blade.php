@@ -1,9 +1,11 @@
 @extends('layouts.app')
 
-@section('titulo-nosotros')
-Inicio
+@section('titulo-contenido')
+pagina principal
 @endsection
 
-@section('titulo-principal')
-Contenido Principal
+@section('contenido')
+<div>
+    <p>Aqui ira nuestro contenido</p>
+</div>
 @endsection

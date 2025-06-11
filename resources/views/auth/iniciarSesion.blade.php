@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('titulo-nosotros')
-Seccion Contacto
+Iniciar Sesion
 @endsection
 
-@section('titulo-principal')
-Contacto
+@section('titulo-contenido')
+Entrar a tu perfil
 @endsection
