@@ -14,6 +14,11 @@ class RegistrarController extends Controller
 
     public function store(Request $request)
     {
-        dd($request);
+        //validaciones laravel
+        $request->validate([
+            'name' => 'required|min:5|max:20'
+        ]);
+
+        return redirect("/");
     }
 }

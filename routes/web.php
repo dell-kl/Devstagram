@@ -8,8 +8,8 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/login', [InicioSesionController::class, 'index']);
+Route::get('/iniciar-sesion', [InicioSesionController::class, 'index'])->name('iniciarSesion');
 
-Route::get('/registrar', [RegistrarController::class, 'index']);
-Route::post('/registrar', [RegistrarController::class, 'store']);
+Route::get('/crear-cuenta', [RegistrarController::class, 'index'])->name('crearCuenta');
+Route::post('/crear-cuenta', [RegistrarController::class, 'store']);   
 

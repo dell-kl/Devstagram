@@ -17,7 +17,7 @@ Crear tu cuenta con nosotros
     </div>
 
     <div class="md:w-4/12 bg-white p-6 shadow rounded-lg">
-        <form class="p-2" method="post" action="/registrar">
+        <form class="p-2" method="post" action="{{ route('crearCuenta') }}">
             {{ csrf_field() }}
             <div>
                 <label class="mb-2 block uppercase text-gray-500 font-bold" for="name">Nombre</label>
@@ -27,6 +27,9 @@ Crear tu cuenta con nosotros
                     name="name"
                     class="p-3 w-full rounded-lg border border-gray-200"
                     placeholder="Inserta tu nombre"/>
+                @error('name')
+                    <span class="text-red-600 font-black text-sm">{{ $message }}</span>
+                @enderror
             </div>
             <div class="pt-2">
                 <label class="mb-2 block uppercase text-gray-500 font-bold" for="username">Nombre Usuario</label>

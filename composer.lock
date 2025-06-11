@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88970a0117c062eed55fa8728fc43833",
+    "content-hash": "760fc39a0d3cdbaca2d55ccd0142403c",
     "packages": [
         {
             "name": "brick/math",
@@ -5507,6 +5507,48 @@
                 }
             ],
             "time": "2025-04-27T18:39:23+00:00"
+        },
+        {
+            "name": "thelimonazo/laravel-spanish-lang",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thelimonazo/laravel-spanish-lang.git",
+                "reference": "d6c5e334c4ad6051151fd48e6a45f78cf02cbfd7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thelimonazo/laravel-spanish-lang/zipball/d6c5e334c4ad6051151fd48e6a45f78cf02cbfd7",
+                "reference": "d6c5e334c4ad6051151fd48e6a45f78cf02cbfd7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+                "php": "^7.0|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TheLimonazo\\SpanishLang\\SpanishLangServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TheLimonazo\\SpanishLang\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Spanish language files for Laravel",
+            "support": {
+                "issues": "https://github.com/thelimonazo/laravel-spanish-lang/issues",
+                "source": "https://github.com/thelimonazo/laravel-spanish-lang/tree/v1.0.0"
+            },
+            "time": "2025-04-26T01:49:27+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
